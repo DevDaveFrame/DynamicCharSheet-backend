@@ -1,0 +1,2 @@
+class CharacterDescriptionsController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class CharacterLanguagesController < ApplicationController
+end
