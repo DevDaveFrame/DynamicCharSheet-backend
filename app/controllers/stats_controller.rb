@@ -1,2 +1,2 @@
-class StatsController < ApplicationController
+class AbilityScoreController < ApplicationController
 end

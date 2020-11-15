@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :character_equipments
   resources :equipment
   resources :character_skills
   resources :skills
