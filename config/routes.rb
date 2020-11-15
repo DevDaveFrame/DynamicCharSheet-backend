@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :equipment
+  resources :character_skills
+  resources :skills
   resources :character_descriptions
   resources :descriptions
   resources :character_stats

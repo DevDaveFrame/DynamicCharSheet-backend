@@ -7,6 +7,7 @@ class CreateCharacters < ActiveRecord::Migration[6.0]
       t.string :alignment, default: "neutral"
       t.integer :inspiration, default: 0
       t.integer :experience, default: 0
+      t.integer :hp, default: 0
 
       t.timestamps
     end
