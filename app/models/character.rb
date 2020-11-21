@@ -1,8 +1,8 @@
 class Character < ApplicationRecord
   belongs_to :user
-  has_one :ability_score
-  has_one :skill
-  has_one :description
+  has_one :ability_score #hash
+  has_one :skill #hash
+  has_one :description #hash
   has_many :character_languages
   has_many :languages, through: :character_languages
   has_many :character_equipment
