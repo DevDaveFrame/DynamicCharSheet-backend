@@ -8,8 +8,16 @@ class Character < ApplicationRecord
   has_many :character_equipment
   has_many :equipment, through: :character_equipment
 
-  def ability_modifier(ability_name)
-    score = self.ability_score[ability_name]
+  def ability_modifier(ability_score)
+    score = self.ability_score[ability_score]
     (score - 10)/2
-end
+  end
 
+  def all_ability_modifiers
+    modifier_hash = {}
+    self.ability_score.each do |name, score|
+      modifier_hash[name] = ability_modifier(score)
+    end
+    return modifier_hash
+  end
+end
