@@ -24,4 +24,5 @@ class Character < ApplicationRecord
     end
     return modifier_hash
   end
+  
 end
