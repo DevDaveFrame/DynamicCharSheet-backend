@@ -19,6 +19,7 @@ class CreateSkills < ActiveRecord::Migration[6.0]
       t.boolean :slight_of_hand
       t.boolean :stealth
       t.boolean :survival
+      t.belongs_to :character, foreign_key: true
 
       t.timestamps
     end

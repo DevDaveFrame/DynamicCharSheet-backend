@@ -6,6 +6,7 @@ class CreateDescriptions < ActiveRecord::Migration[6.0]
       t.text :bonds
       t.text :ideals
       t.text :flaws
+      t.belongs_to :character, foreign_key: true
 
       t.timestamps
     end

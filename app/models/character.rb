@@ -8,6 +8,10 @@ class Character < ApplicationRecord
   has_many :character_equipment
   has_many :equipment, through: :character_equipment
 
+  def full_name
+    self.first_name + " " + self.lastname
+  end
+  
   def ability_modifier(ability_score)
     score = self.ability_score[ability_score]
     (score - 10)/2

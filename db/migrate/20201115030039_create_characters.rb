@@ -8,6 +8,7 @@ class CreateCharacters < ActiveRecord::Migration[6.0]
       t.integer :inspiration, default: 0
       t.integer :experience, default: 0
       t.integer :hp, default: 0
+      t.belongs_to :user, foreign_key: true
 
       t.timestamps
     end
